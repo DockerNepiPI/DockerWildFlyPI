@@ -10,11 +10,14 @@ cd DockerWildFlyPI
 docker build --rm=true --tag=pi/jboss/wildfly .
 ```
 
-After build is complete create a docker container and expose port 8080.
+After build is complete create a docker container and expose port 8080 and 9990.
 
 ```
-docker run -d -p 8080:8080 pi/jboss/wildfly
+docker run -d -p 8080:8080 -p 9990:9990 pi/jboss/wildfly
 ```
+
+A management user admin with password admin will be created. It is recommended to change this password!
+Managment interface can be accessed from port 9990.
 
 ## License
 
