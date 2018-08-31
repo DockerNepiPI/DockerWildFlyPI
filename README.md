@@ -1,8 +1,10 @@
-# WildFly 10 Docker Image for Raspbian
+# WildFly Docker Image for Raspbian
 
-This docker image based on [raspbian-jdk8](https://hub.docker.com/r/manicmonkey/raspbian-jdk8/) image from manicmonkey. Builds a docker image with a Wildfly 10 server.
+This docker image based on [debian](https://hub.docker.com/_/debian/) image. Builds a docker image with a Wildfly server.
 
 ## Build Container
+
+Environment variables for administration passwords can be set from WILDFLY_USER and WILDFLY_PW.
 
 ```
 git clone https://github.com/Nepitwin/DockerWildFlyPI.git
