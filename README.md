@@ -2,6 +2,15 @@
 
 This docker image based on [debian](https://hub.docker.com/_/debian/) image. Builds a docker image with a Wildfly server.
 
+## Docker Hub
+
+Docker Hub image can be pulled from last release build.
+
+```
+docker pull nepitwin/pi_wildfly
+docker run -d -p 8080:8080 -p 9990:9990 nepitwin/pi_wildfly
+```
+
 ## Build Container
 
 Environment variables for administration passwords can be set from WILDFLY_USER and WILDFLY_PW.
